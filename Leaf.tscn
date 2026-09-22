@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dlcfs0d7u04dk"]
+
+[ext_resource type="Script" uid="uid://crgln2ffcp1fo" path="res://leaf.gd" id="1_ka8gf"]
+[ext_resource type="Texture2D" uid="uid://uctrmdgx0sg1" path="res://Leaf.png" id="1_rpspc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i7due"]
+radius = 25.317978
+
+[node name="Leaf" type="Area2D" unique_id=2101251652]
+script = ExtResource("1_ka8gf")
+
+[node name="LeafImage" type="Sprite2D" parent="." unique_id=1652091375]
+position = Vector2(289.75, 260.00003)
+scale = Vector2(0.09229209, 0.090909146)
+texture = ExtResource("1_rpspc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2051713990]
+position = Vector2(289.5, 259)
+shape = SubResource("CircleShape2D_i7due")

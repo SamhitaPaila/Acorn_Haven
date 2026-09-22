@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ru3lsdsyomn0"]
+
+[ext_resource type="Script" uid="uid://h8uith8q7sdu" path="res://acorn.gd" id="1_la0ce"]
+[ext_resource type="Texture2D" uid="uid://ci8oanfucphe8" path="res://Acorn.png" id="1_r211y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i7due"]
+radius = 22.36068
+
+[node name="Acorn" type="Area2D" unique_id=107029789]
+script = ExtResource("1_la0ce")
+
+[node name="AcornImage" type="Sprite2D" parent="." unique_id=858882389]
+position = Vector2(525, 456.00003)
+scale = Vector2(0.25260392, 0.22747734)
+texture = ExtResource("1_r211y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=714681543]
+position = Vector2(526, 457)
+shape = SubResource("CircleShape2D_i7due")
